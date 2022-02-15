@@ -7,23 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		026E55D5ABF0E69CD9DAD5AD /* Pods_InstaClone_Murzaliev.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2EEB3BC16747F81199D52491 /* Pods_InstaClone_Murzaliev.framework */; };
 		DDDFA30F27B9421100554868 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA30E27B9421100554868 /* AppDelegate.swift */; };
 		DDDFA31127B9421100554868 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA31027B9421100554868 /* SceneDelegate.swift */; };
-		DDDFA31327B9421100554868 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA31227B9421100554868 /* ViewController.swift */; };
+		DDDFA31327B9421100554868 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA31227B9421100554868 /* MainViewController.swift */; };
 		DDDFA31627B9421100554868 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA31427B9421100554868 /* Main.storyboard */; };
 		DDDFA31827B9421200554868 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA31727B9421200554868 /* Assets.xcassets */; };
 		DDDFA31B27B9421200554868 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DDDFA31927B9421200554868 /* LaunchScreen.storyboard */; };
+		DDDFA32327BAC55500554868 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA32227BAC55500554868 /* MainTableViewCell.swift */; };
+		DDDFA32527BACAFB00554868 /* FeedModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA32427BACAFB00554868 /* FeedModel.swift */; };
+		DDDFA32727BAD82400554868 /* StoriesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA32627BAD82400554868 /* StoriesTableViewCell.swift */; };
+		DDDFA32927BADB1C00554868 /* StoriesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DDDFA32827BADB1C00554868 /* StoriesCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2EEB3BC16747F81199D52491 /* Pods_InstaClone_Murzaliev.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_InstaClone_Murzaliev.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6DC7F64E6095E695FAAF5F1C /* Pods-InstaClone-Murzaliev.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone-Murzaliev.release.xcconfig"; path = "Target Support Files/Pods-InstaClone-Murzaliev/Pods-InstaClone-Murzaliev.release.xcconfig"; sourceTree = "<group>"; };
+		7ECF62F3B82F4A3EDACB7F48 /* Pods-InstaClone-Murzaliev.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-InstaClone-Murzaliev.debug.xcconfig"; path = "Target Support Files/Pods-InstaClone-Murzaliev/Pods-InstaClone-Murzaliev.debug.xcconfig"; sourceTree = "<group>"; };
 		DDDFA30B27B9421100554868 /* InstaClone-Murzaliev.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstaClone-Murzaliev.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		DDDFA30E27B9421100554868 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DDDFA31027B9421100554868 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DDDFA31227B9421100554868 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DDDFA31227B9421100554868 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		DDDFA31527B9421100554868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DDDFA31727B9421200554868 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DDDFA31A27B9421200554868 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DDDFA31C27B9421200554868 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DDDFA32227BAC55500554868 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
+		DDDFA32427BACAFB00554868 /* FeedModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedModel.swift; sourceTree = "<group>"; };
+		DDDFA32627BAD82400554868 /* StoriesTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesTableViewCell.swift; sourceTree = "<group>"; };
+		DDDFA32827BADB1C00554868 /* StoriesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoriesCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +43,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				026E55D5ABF0E69CD9DAD5AD /* Pods_InstaClone_Murzaliev.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		98B0AE59E15576BCEA952C72 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2EEB3BC16747F81199D52491 /* Pods_InstaClone_Murzaliev.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A706A185BB0D4EA4BFF0891A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ECF62F3B82F4A3EDACB7F48 /* Pods-InstaClone-Murzaliev.debug.xcconfig */,
+				6DC7F64E6095E695FAAF5F1C /* Pods-InstaClone-Murzaliev.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		DDDFA30227B9421100554868 = {
 			isa = PBXGroup;
 			children = (
 				DDDFA30D27B9421100554868 /* InstaClone-Murzaliev */,
 				DDDFA30C27B9421100554868 /* Products */,
+				A706A185BB0D4EA4BFF0891A /* Pods */,
+				98B0AE59E15576BCEA952C72 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,7 +90,11 @@
 			children = (
 				DDDFA30E27B9421100554868 /* AppDelegate.swift */,
 				DDDFA31027B9421100554868 /* SceneDelegate.swift */,
-				DDDFA31227B9421100554868 /* ViewController.swift */,
+				DDDFA31227B9421100554868 /* MainViewController.swift */,
+				DDDFA32227BAC55500554868 /* MainTableViewCell.swift */,
+				DDDFA32627BAD82400554868 /* StoriesTableViewCell.swift */,
+				DDDFA32827BADB1C00554868 /* StoriesCollectionViewCell.swift */,
+				DDDFA32427BACAFB00554868 /* FeedModel.swift */,
 				DDDFA31427B9421100554868 /* Main.storyboard */,
 				DDDFA31727B9421200554868 /* Assets.xcassets */,
 				DDDFA31927B9421200554868 /* LaunchScreen.storyboard */,
@@ -74,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = DDDFA31F27B9421200554868 /* Build configuration list for PBXNativeTarget "InstaClone-Murzaliev" */;
 			buildPhases = (
+				AF381C5A1947CA67BCAE38D6 /* [CP] Check Pods Manifest.lock */,
 				DDDFA30727B9421100554868 /* Sources */,
 				DDDFA30827B9421100554868 /* Frameworks */,
 				DDDFA30927B9421100554868 /* Resources */,
+				FC0D4A2CDEA790A142C9D5E1 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -133,14 +171,60 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		AF381C5A1947CA67BCAE38D6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-InstaClone-Murzaliev-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC0D4A2CDEA790A142C9D5E1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaClone-Murzaliev/Pods-InstaClone-Murzaliev-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-InstaClone-Murzaliev/Pods-InstaClone-Murzaliev-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-InstaClone-Murzaliev/Pods-InstaClone-Murzaliev-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		DDDFA30727B9421100554868 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DDDFA31327B9421100554868 /* ViewController.swift in Sources */,
+				DDDFA31327B9421100554868 /* MainViewController.swift in Sources */,
 				DDDFA30F27B9421100554868 /* AppDelegate.swift in Sources */,
+				DDDFA32527BACAFB00554868 /* FeedModel.swift in Sources */,
+				DDDFA32927BADB1C00554868 /* StoriesCollectionViewCell.swift in Sources */,
+				DDDFA32327BAC55500554868 /* MainTableViewCell.swift in Sources */,
 				DDDFA31127B9421100554868 /* SceneDelegate.swift in Sources */,
+				DDDFA32727BAD82400554868 /* StoriesTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +368,7 @@
 		};
 		DDDFA32027B9421200554868 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECF62F3B82F4A3EDACB7F48 /* Pods-InstaClone-Murzaliev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -297,6 +382,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,6 +398,7 @@
 		};
 		DDDFA32127B9421200554868 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC7F64E6095E695FAAF5F1C /* Pods-InstaClone-Murzaliev.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +412,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
