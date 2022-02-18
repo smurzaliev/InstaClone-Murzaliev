@@ -33,24 +33,17 @@ class StoriesTableViewCell: UITableViewCell, UICollectionViewDelegate, UICollect
         return cell
     }
     
-    
     let scrollView: UICollectionView = {
         let flow = UICollectionViewFlowLayout()
         flow.scrollDirection = .horizontal
-        
         let view = UICollectionView(frame: .zero, collectionViewLayout: flow)
         view.showsHorizontalScrollIndicator = false
         view.register(StoriesCollectionViewCell.self, forCellWithReuseIdentifier: "StoriesCollectionViewCell")
-                
         return view
     }()
-    
-
 
     override func layoutSubviews() {
-        addSubview(scrollView)
-
-        
+        addSubview(scrollView)   
         scrollView.delegate = self
         scrollView.dataSource = self
         scrollView.register(StoriesCollectionViewCell.self, forCellWithReuseIdentifier: "StoriesCollectionViewCell")

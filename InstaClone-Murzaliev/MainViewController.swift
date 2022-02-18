@@ -11,11 +11,8 @@ import SnapKit
 class MainViewController: UIViewController {
     
     private lazy var screenLayout = UIView()
-    
     private lazy var mainTableView = UITableView()
-    
     private lazy var bottomBar = UIStackView()
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +20,7 @@ class MainViewController: UIViewController {
         mainTableView.dataSource = self
         mainTableView.register(MainTableViewCell.self, forCellReuseIdentifier: "MainTableViewCell")
         mainTableView.register(StoriesTableViewCell.self, forCellReuseIdentifier: "StoriesTableViewCell")
-
-        makeScreen()
-        
+        setSubViews()
     }
     
     //MARK: - Элементы ленты
@@ -42,7 +37,7 @@ class MainViewController: UIViewController {
         FeedModel(profileImage: UIImage(named: "profile3")!, profileLabel: "Medet Suleimen", profileLocation: "Almata, Kazakhstan", feedImage: UIImage(named: "feed3")!, likesLabel: "Нравится osce и другим", feedText: "Наслаждаясь тишиной")
     ]
     
-    private func makeScreen() {
+    private func setSubViews() {
         
         //MARK: - Добавление элементов View
         
@@ -63,7 +58,6 @@ class MainViewController: UIViewController {
         lineView.layer.borderColor = UIColor.darkGray.cgColor
         lineView.layer.borderWidth = 1
         lineView.layer.shadowColor = UIColor.lightGray.cgColor
-        //        lineView.layer.shadowOffset = CGSize(width: 15, height: 15)
         lineView.layer.shadowRadius = CGFloat(5)
         screenLayout.addSubview(lineView)
         lineView.snp.makeConstraints { make in
@@ -76,7 +70,6 @@ class MainViewController: UIViewController {
         
         let labelImage = UIImageView(image: UIImage(named: "logo-label"))
         labelImage.contentMode = .scaleAspectFit
-        
         let leftImage = UIImageView(image: UIImage(systemName: "camera"))
         let rightImage = UIImageView(image: UIImage(systemName: "paperplane"))
         
@@ -86,7 +79,6 @@ class MainViewController: UIViewController {
             make.top.equalToSuperview().offset(5)
             make.width.equalTo(35)
             make.height.equalTo(30)
-
         }
         
         navigationController?.navigationBar.addSubview(rightImage)
@@ -95,27 +87,22 @@ class MainViewController: UIViewController {
             make.top.equalToSuperview().offset(5)
             make.width.equalTo(35)
             make.height.equalTo(30)
-
         }
         
         navigationController?.navigationBar.addSubview(labelImage)
         labelImage.snp.makeConstraints { make in
             make.centerX.equalToSuperview()
             make.height.equalTo(40)
-            
         }
-        
         
         //MARK: - Нижний StackView с кнопками из SF Symbols
         
         let largeConfig = UIImage.SymbolConfiguration(pointSize: 24, weight: .semibold, scale: .large)
-        
         let imageHome = UIImage(systemName: "house.fill", withConfiguration: largeConfig)
         let imageSearch = UIImage(systemName: "magnifyingglass", withConfiguration: largeConfig)
         let imageAdd = UIImage(systemName: "plus.app", withConfiguration: largeConfig)
         let imageHeart = UIImage(systemName: "heart.fill", withConfiguration: largeConfig)
         let imageProfile = UIImage(systemName: "person.crop.circle", withConfiguration: largeConfig)
-        
         
         let bottomButtonHome = UIButton(type: .system)
         bottomButtonHome.setImage(imageHome, for: .normal)
@@ -131,17 +118,13 @@ class MainViewController: UIViewController {
         
         let bottomButtonProfile = UIButton(type: .system)
         bottomButtonProfile.setImage(imageProfile, for: .normal)
-        
+    
         screenLayout.addSubview(bottomBar)
-        
         bottomBar.addArrangedSubview(bottomButtonHome)
         bottomBar.addArrangedSubview(bottomButtonSearch)
         bottomBar.addArrangedSubview(bottomButtonAdd)
         bottomBar.addArrangedSubview(bottomButtonHeart)
         bottomBar.addArrangedSubview(bottomButtonProfile)
-        
-        
-        
         bottomBar.axis = .horizontal
         bottomBar.distribution = .fillEqually
         bottomBar.snp.makeConstraints { make in
@@ -149,16 +132,12 @@ class MainViewController: UIViewController {
             make.top.equalTo(lineView.snp.bottom)
             make.height.equalTo(60)
         }
-        
     }
-    
-    
 }
 
 //MARK: - Делегаты главной UITableView на экране
 
 extension MainViewController: UITableViewDelegate, UITableViewDataSource {
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return feeds.count
@@ -166,9 +145,7 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        
         let index = indexPath.row
-        
         if index != 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MainTableViewCell", for: indexPath) as! MainTableViewCell
             cell.profileLabel.text = feeds[index].profileLabel
@@ -180,21 +157,17 @@ extension MainViewController: UITableViewDelegate, UITableViewDataSource {
             return cell
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "StoriesTableViewCell", for: indexPath) as! StoriesTableViewCell
-            
             return cell
         }
-        
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         let index = indexPath.item
         
         if index != 0 {
-            return CGFloat(535)
-
+            return 535
         } else {
-            return CGFloat(84)
+            return 84
         }
     }
     
